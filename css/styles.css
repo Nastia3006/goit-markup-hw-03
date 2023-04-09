@@ -1,3 +1,12 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+::after {
+  box-sizing: inherit;
+}
+
 :root {
   --primary-font: Roboto;
   --secondary-font: Raleway;
@@ -63,6 +72,8 @@ body {
 
 .list {
   list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 .adr {
   font-style: normal;
@@ -82,30 +93,48 @@ body {
 .logo-light {
   color: var(--cloud);
 }
+
+/*HW3*/
+.container {
+  width: 1158px;
+}
+.item {
+  margin-top: 0;
+  margin-bottom: 120px;
+}
+.work-card {
+  margin-top: 0;
+  margin-bottom: 72px;
+}
+
 /*Section1*/
 .hero-image {
   background-color: var(--grey);
+  text-align: center;
 }
 .hero-txt {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
   color: var(--white);
-  text-align: center;
+
   letter-spacing: 0.02em;
+  margin-bottom: 48px;
 }
 
 .button-txt {
+  text-align: center;
   font-family: 'Roboto', sans-serif;
   cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
-  display: flex;
-  align-items: center;
+
   letter-spacing: 0.04em;
   color: var(--white);
   background-color: var(--iris);
+  border-radius: 4px;
+  padding: 16px 32px;
 }
 .button-txt:hover,
 .button-txt:focus {
@@ -114,6 +143,8 @@ body {
 
 /*Section2*/
 .title {
+  margin-top: 0;
+  margin-bottom: 8px;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2;
@@ -175,6 +206,9 @@ body {
   text-align: center;
   letter-spacing: 0.04em;
   cursor: pointer;
+  border-radius: 4px;
+  padding: 12px 24px;
+  display: inline-block;
 }
 .filter-btn:hover {
   background-color: var(--ocean);
