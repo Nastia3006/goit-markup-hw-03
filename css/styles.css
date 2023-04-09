@@ -122,12 +122,7 @@ body {
 .logo-item {
   margin-right: 76px;
 }
-.link-item {
-  margin-right: 0;
-}
-.link-cnt-item {
-  margin-right: 0;
-}
+
 /*Section1*/
 .hero-image {
   background-color: var(--grey);
@@ -194,9 +189,7 @@ body {
   margin-right: 24px;
   width: calc((100% - 72px) / 4);
 }
-.items {
-  margin-right: 0;
-}
+
 /*Section3*/
 .work {
   font-weight: 700;
@@ -213,6 +206,9 @@ body {
 .photo {
   display: flex;
   gap: 24px;
+}
+.photo-item {
+  width: calc((100% - 48px) / 3);
 }
 /*Section4*/
 .team {
@@ -234,10 +230,11 @@ body {
 .team-item {
   margin-bottom: 72px;
 }
-.mark {
+.card-items {
   padding: 32px 16px;
   border-radius: 0px 0px 4px 4px;
 }
+
 /*Footer*/
 .ftr {
   background-color: var(--navy-blue);
