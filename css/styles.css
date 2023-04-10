@@ -340,8 +340,6 @@ img {
   display: flex;
   align-items: center;
   padding: 0 15px 0 15px;
-  margin-left: auto;
-  margin-right: auto;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
