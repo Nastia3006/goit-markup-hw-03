@@ -339,7 +339,7 @@ img {
   width: 1158px;
   display: flex;
   align-items: center;
-  padding: 0 15px 0 15px;
+
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
