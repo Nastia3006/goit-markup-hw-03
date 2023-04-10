@@ -216,7 +216,7 @@ ul {
 }
 .title-item {
   margin-right: 24px;
-  width: calc((100% - 3 * 24px) / 4);
+  width: 264px;
 }
 
 /*Section3*/
