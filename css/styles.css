@@ -216,11 +216,9 @@ ul {
 }
 .title-item {
   margin-right: 24px;
- 
+  width: calc((100% - 3 * 24px) / 4);
 }
-.title-item-sec{
-  width: calc((100% - 75px) / 4);
-}
+
 /*Section3*/
 .work {
   font-weight: 700;
