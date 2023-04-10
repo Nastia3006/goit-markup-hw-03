@@ -31,9 +31,26 @@ body {
   color: var(--main-txt-cl);
   background-color: var(--white);
 }
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+h1,
+h2,
+h3,
+p,
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
 .page-header {
   background-color: var(--white);
   border-bottom: 1px solid var(--cornflower);
+}
+.container-header {
+  display: flex;
 }
 
 .logo-link {
@@ -64,6 +81,7 @@ body {
   display: flex;
   margin-right: 40px;
   padding: 24px 0 24px;
+  gap: 40px;
 }
 
 .link:hover {
@@ -73,15 +91,10 @@ body {
   color: #404bbf;
 }
 
-.list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  display: flex;
-}
 .adr {
   font-style: normal;
   display: flex;
+  margin-left: auto;
 }
 .link-cnt {
   font-weight: 400;
@@ -91,6 +104,7 @@ body {
   letter-spacing: 0.02em;
   text-decoration: none;
   margin-right: 40px;
+  gap: 40px;
 }
 .email:hover {
   color: var(--ocean);
@@ -103,9 +117,11 @@ body {
 /*HW3*/
 .container {
   width: 1158px;
-  display: flex;
+
   align-items: center;
   padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
 }
 .item {
   margin-top: 0;
@@ -113,6 +129,7 @@ body {
 }
 .work-card {
   margin-top: 0;
+
   margin-bottom: 72px;
 }
 .header-item {
@@ -123,6 +140,9 @@ body {
   margin-right: 76px;
 }
 
+.list-item {
+  margin-left: 76px;
+}
 /*Section1*/
 .hero-image {
   background-color: var(--grey);
@@ -140,7 +160,6 @@ body {
 }
 
 .button-txt {
-  display: block;
   min-width: 169px;
   height: 56px;
   border: none;
@@ -156,10 +175,12 @@ body {
   background-color: var(--iris);
   border-radius: 4px;
   padding: 16px 32px;
+  border: 1px solid var(--cornflower);
 }
 .button-txt:hover,
 .button-txt:focus {
   background-color: var(--ocean);
+  border: 1px solid transparent;
 }
 
 /*Section2*/
@@ -171,7 +192,6 @@ body {
   line-height: 1.2;
   letter-spacing: 0.02em;
   color: var(--grey);
-  text-align: center;
 }
 .title-txt {
   font-weight: 400;
@@ -179,17 +199,15 @@ body {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  text-align: center;
 }
 .work-item {
   padding: 120px 0;
 }
 .title-item {
-  display: flex;
   margin-right: 24px;
   width: calc((100% - 72px) / 4);
+  margin-top: 120px;
 }
-
 /*Section3*/
 .work {
   font-weight: 700;
@@ -202,12 +220,14 @@ body {
 }
 .work-card-item {
   padding-bottom: 120px;
+  padding-top: 120px;
 }
 .photo {
   display: flex;
   gap: 24px;
 }
 .photo-item {
+  margin-right: 24px;
   width: calc((100% - 48px) / 3);
 }
 /*Section4*/
@@ -217,18 +237,19 @@ body {
 }
 .card {
   background-color: var(--white);
-
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   border-radius: 0px 0px 4px 4px;
-  display: flex;
   gap: 24px;
+  width: 264px;
 }
 .card-item {
-  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+  text-align: center;
 }
 .team-item {
   margin-bottom: 72px;
+  text-align: center;
 }
 .card-items {
   padding: 32px 16px;
@@ -246,14 +267,24 @@ body {
 
   letter-spacing: 0.02em;
   color: var(--cloud);
+
+  margin-bottom: 100px;
+  width: 264px;
 }
 .ftr-item {
   display: inline-block;
   margin-bottom: 16px;
 }
+.footer-item {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
 
 /*Portfolio*/
-
+img {
+  display: block;
+}
 .filter-btn {
   font-family: var(--primary-font), sans-serif;
   color: var(--iris);
@@ -270,6 +301,9 @@ body {
   border-radius: 4px;
   padding: 12px 24px;
   display: inline-block;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 .filter-btn:hover {
   background-color: var(--ocean);
@@ -281,4 +315,25 @@ body {
 }
 .works {
   color: var(--navy-blue);
+}
+
+.main-section {
+  padding: 96px 0 120px;
+}
+.portfolio-cards {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+
+  flex-basis: calc((100% - 48px) / 3);
+}
+.list-port {
+  width: 1158px;
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+  flex-wrap: wrap;
 }
