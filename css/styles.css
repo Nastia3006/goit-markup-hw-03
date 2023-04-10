@@ -216,6 +216,9 @@ ul {
 }
 .title-item {
   margin-right: 24px;
+ 
+}
+.title-item-sec{
   width: calc((100% - 75px) / 4);
 }
 /*Section3*/
