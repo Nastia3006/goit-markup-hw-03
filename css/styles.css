@@ -211,13 +211,14 @@ ul {
   letter-spacing: 0.02em;
   color: var(--slate);
 }
+.title-item {
+  margin-right: 24px;
+  width: calc((100% - 72px) / 4);
+}
 .work-item {
   padding: 120px 0;
 }
-.title-item {
-  margin-right: 24px;
-  width: 264px;
-}
+
 
 /*Section3*/
 .work {
