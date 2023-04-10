@@ -219,7 +219,6 @@ ul {
   padding: 120px 0;
 }
 
-
 /*Section3*/
 .work {
   font-weight: 700;
@@ -363,9 +362,9 @@ img {
   margin-bottom: 8px;
 }
 .portfolio-cards {
+  width: 360px;
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 48px;
-  width: 360px;
 }
